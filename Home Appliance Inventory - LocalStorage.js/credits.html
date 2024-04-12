@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Application for Household Appliance Inventory Management</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/ico/stock.ico" type="image/x-icon">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+/>
+</head>
+<style>
+    body {
+        background-color: rgba(94, 94, 160, 0.767);
+    }
+</style>
+<nav class="navbar navbar-expand-lg navbar-light nav-bg-custom">
+    <a class="navbar-brand" href="#">
+        <img src="img/logo.png" width="40" height="40" class="d-inline-block align-top" alt="">
+        Inventory Management
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Inventory</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="credits.html">Credits</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="category.html">Add or Remove Category</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<body onload="mostrarResultado()">
+    <main id="app" class="texto-centro">
+        <header class="texto-principal">
+            <h1>Credits</h1>
+            <p></p>
+        </header>
+           
+        <section id="dados" class="entrada-dados container">
+            <h1>Home Appliance Inventory Management Project</h1>
+        
+            <p>
+                This is a JavaScript project for managing the inventory of home appliances using browser's LocalStorage.
+            </p>
+            
+            <h2>Credits</h2>
+        
+            <p>
+                This project was developed by <a href="https://github.com/kikolaranjeira">kikolaranjeira</a>.
+            </p>
+        
+            <h2>About</h2>
+        
+            <p>
+                This project aims to provide a simple yet effective solution for tracking home appliance inventory using the browser's 
+                LocalStorage feature. As the sole contributor to this project, I've endeavored to create a user-friendly interface coupled 
+                with robust functionality to meet the needs of inventory management enthusiasts and professionals alike.
+            </p>
+        
+            <p>
+                Feel free to explore the codebase, suggest improvements, or report any issues you encounter. Your feedback is highly valued and appreciated.
+            </p>
+        
+            <h2>Contributions</h2>
+        
+            <p>
+                If you wish to contribute to this project, please feel free to submit pull requests or report issues.
+            </p>
+            <br>
+            <br>
+            <a href="https://www.buymeacoffee.com/kikolaranjeira"> <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="kikolaranjeira" /></a>
+        </section>
+        
+
+    </main>
+    <footer class="rodape texto-centro">
+        COPYRIGHT &copy; 2024 | <a href="https://github.com/kikolaranjeira" target="_blank">Francisco Laranjeira</a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="src/main.js"></script>
+    <script src="src/category.js"></script>
+    
+</body>
+</html>

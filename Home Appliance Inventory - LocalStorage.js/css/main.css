@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+/* FONTES */
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+@font-face {
+    font-family: Acme, sans-serif;
+    src: url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+}
+
+/* RESETS DO HTML */
+* {
+    box-sizing: border-box;
+}
+
+/* GERAL */
+.texto-centro {
+    text-align: center;
+}
+
+/* PROGRAMA */
+h1 {
+    color: white;
+    font-weight: bolder;
+    font-size: 32pt;
+    font-family: "Rubik", sans-serif;
+    display: block;
+    padding-top: 40px;
+}
+
+p {
+    display: block;
+    padding: 30px 30px 0px 30px;
+}
+
+.entrada-dados {
+    display: block;
+    background-color: #EBEBEB;
+    border-radius: 10px;
+    margin: 15px 15px 2px 15px;
+    padding-bottom: 20px;
+}
+
+.entradas {
+    width: 80%;
+    margin: 2px;
+    padding: 6px;
+    border-radius: 6px;
+    border: transparent;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.356);
+}
+
+/* BOTOES */
+.botoes {
+    background-color: #e63164;
+    font-family: Acme, sans-serif;
+    font-weight: bolder;
+    color: white;
+    border-radius: 6px;
+    border: transparent;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.356);
+    padding: 12px;
+    margin-top: 14px;
+}
+
+.botoes-tabela {
+    background-color: #e63164;
+    font-family: Acme, sans-serif;
+    font-weight: bolder;
+    color: white;
+    border-radius: 6px;
+    border: transparent;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.356);
+    padding: 5px 10px 5px 10px;
+}
+
+/* RODAPE */
+.rodape {
+    color: rgba(255, 255, 255, 0.425);
+    font-size: 10pt;
+}
+
+.rodape a {
+    text-decoration: none;
+    text-decoration-style: none;
+    color: rgba(255, 255, 255, 0.425);
+    font-size: 10pt;
+    padding-bottom: 20px;
+}
+
+/* TABELA */
+#comport-table {
+    margin: 6px 15px 6px 15px;
+}
+
+.saida-dados {
+    text-align: center;
+    background-color: #EBEBEB;
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.saida-dados th {
+    border-bottom: solid 2px rgba(0, 0, 0, 0.219);
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+}
+
+.saida-dados td {
+    padding: 6px 0px 6px 0px;
+    border-bottom: solid 0.5px #0000001f;
+}
+
+/* LAYOUT */
+.container {
+    max-width: 600px;
+    margin: 6px auto;
+}
+
+.nav-bg-custom {
+    background-color: #c46b84;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 630px) {
+
+    .entrada-dados {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}

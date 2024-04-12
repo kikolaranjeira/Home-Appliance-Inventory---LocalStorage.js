@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Application for Household Appliance Inventory Management</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/ico/stock.ico" type="image/x-icon">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+/>
+</head>
+<style>
+    body {
+        background-color: rgba(94, 94, 160, 0.767);
+    }
+</style>
+<nav class="navbar navbar-expand-lg navbar-light nav-bg-custom">
+    <a class="navbar-brand" href="#">
+        <img src="img/logo.png" width="40" height="40" class="d-inline-block align-top" alt="">
+        Inventory Management
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Inventory</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="credits.html">Credits</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="category.html">Add or Remove Category</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<body onload="mostrarResultado()">
+    <main id="app" class="texto-centro">
+        <header class="texto-principal">
+            <h1>Home Appliance Inventory</h1>
+            <p></p>
+        </header>
+        <div class="input-group input-group-sm mb-3" style="width: 30%; margin: 0 auto;">
+            <input type="text" class="form-control" id="searchInput" onkeyup="searchByName()" placeholder="Search by name home appliance...">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="button" onclick="searchByName()">Search</button>
+            </div>
+        </div>
+        <div id="searchResults"></div>
+        
+        
+        
+        <section id="dados" class="entrada-dados container">
+            <p>Fill in the fields to add or remove an item! 🎛️</p>
+            <select class="entradas" name="categoria" id="categoria" required>
+                <!-- Add more options as needed -->
+            </select>
+            
+            
+            <input class="entradas" type="number" name="id" id="id" placeholder="ID" autocomplete="off"/></br>
+            <input class="entradas" type="text" name="nome" id="nome" placeholder="Name" autocomplete="off"/></br>
+            <input class="entradas" type="text" name="marca" id="marca" placeholder="Brand" autocomplete="off" /></br>
+            <input class="entradas" type="text" name="modelo" id="modelo" placeholder="Model" autocomplete="off"/></br>
+            <input class="entradas" type="number" name="quantidade" id="quantidade" placeholder="Quantity" autocomplete="off" inputmode="numeric"/></br>
+            <input class="entradas" type="number" name="preço" id="preço" placeholder="Price €" autocomplete="off" inputmode="numeric"/></br>
+            <button class="botoes" name="adicionar" id="adicionar" onclick="verificar(), adicionar(), mostrarResultado()">ADD</button>
+            <button class="botoes" name="excluir" id="excluir" onclick="excluir(), mostrarResultado()">REMOVE ALL</button>
+            <button class="botoes" name="ordenar" id="ordenar" onclick="sortByStock()">SORT BY QUANTITY</button>
+
+        </section>
+        <section id="estoque">
+            <div id="comport-table">
+                <table class="saida-dados container" style="table-layout: fixed; width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Brand</th>
+                            <th>Model</th>
+                            <th>Quantity</th>
+                            <th>Price €</th>
+                            <th>Remove</th>
+                            <th>Edit</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultados"></tbody>
+                    <tr>
+                        <td>XY4</td>
+                        <td>Fridge</td>
+                        <td>Electrolux</td>
+                        <td>Model XYZ123</td>
+                        <td>764.99</td>
+                        <td>5</td>
+                        <td><button onclick="excluirItem(1)">Remove</button></td>
+                        <td><button onclick="editarItem(1)">Edit</button></td>
+                    </tr>
+                    <tr>
+                        <td>ZHS</td>
+                        <td>Washing Machine</td>
+                        <td>Brastemp</td>
+                        <td>Model ABC456</td>
+                        <td>242.99</td>
+                        <td>10</td>
+                        <td><button onclick="excluirItem(2)">Remove</button></td>
+                        <td><button onclick="editarItem(2)">Edit</button></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape texto-centro">
+        COPYRIGHT &copy; 2024 | <a href="https://github.com/kikolaranjeira" target="_blank">Francisco Laranjeira</a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-VrZp1OPdLj5c3lqqCDr9+KpUqI/t5IiXZzRMtk5tZGhr2o1QHRt02KjpKksXd5ML" crossorigin="anonymous"></script>
+    <script src="src/main.js"></script>
+    <script src="src/category.js"></script>
+    
+</body>
+</html>
