@@ -1,6 +1,8 @@
 # Home Appliance Inventory
 Welcome to the Home Appliance Inventory project! This project aims to provide a simple and efficient way to manage the inventory of home appliances. With this application, users can add, remove, edit, and search for items in their inventory seamlessly.
 
+
+
 ![Screenshot_1](https://github.com/kikolaranjeira/Home-Appliance-Inventory---LocalStorage.js/assets/150380154/c125d060-46c9-47da-abca-c614e9f332a4)
 
 # Features
@@ -14,7 +16,11 @@ Welcome to the Home Appliance Inventory project! This project aims to provide a 
 
 **Sorting**: Sort items in the inventory table by quantity, allowing you to identify items with low stock levels at a glance.
 
+
+
 ![Screenshot_2](https://github.com/kikolaranjeira/Home-Appliance-Inventory---LocalStorage.js/assets/150380154/98ad5a3d-4f3c-403a-92f9-f5693e778f9f)
+
+
 
 # Technologies Used
 **HTML/CSS/JavaScript**: The frontend of the application is built using these fundamental web technologies.
