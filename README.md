@@ -3,9 +3,13 @@ Welcome to the Home Appliance Inventory project! This project aims to provide a 
 
 # Features
 **Add Items**: Easily add new items to your inventory by filling in the required fields, including ID, name, brand, model, quantity, price, and category.
+
 **Remove Items**: Remove individual items or clear the entire inventory with the click of a button.
+
 **Edit Items**: Modify existing items directly from the inventory table by clicking the "Edit" button.
+
 **Search Functionality**: Quickly search for items by name using the search bar, making it easy to find specific items within your inventory.
+
 **Sorting**: Sort items in the inventory table by quantity, allowing you to identify items with low stock levels at a glance.
 
 # Technologies Used
