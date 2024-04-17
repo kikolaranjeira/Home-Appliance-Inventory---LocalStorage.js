@@ -1,4 +1,3 @@
-<p align="center"> <img src="https://komarev.com/ghpvc/?username=kikolaranjeira&orange=for-the-badge" alt="kikolaranjeira" /> </p>
 # Home Appliance Inventory
 
 Welcome to the Home Appliance Inventory project! This project aims to provide a simple and efficient way to manage the inventory of home appliances. With this application, users can add, remove, edit, and search for items in their inventory seamlessly.
